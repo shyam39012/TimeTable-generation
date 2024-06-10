@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Time table</title>
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  
+    
+    <body>
+        <table border="2">
+            <tr>
+                <th>Hour</th>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+                
+            </tr>
+       
+       <%
+               try{
+                   Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sample", "root", "root");
+        Statement st = con.createStatement();
+                   String str="select * from time";
+                   
+                   ResultSet rs=st.executeQuery(str);
+                   
+                   
+                   while(rs.next()){
+                     %> 
+                     <tr> 
+                         <td><%=rs.getString("Hour")%></td>
+                         <td><%=rs.getString("MONDAY")%></td>
+                         <td><%=rs.getString("TUESDAY")%></td>
+                         <td><%=rs.getString("WEDNESDAY")%></td>
+                         <td><%=rs.getString("THURSDAY")%></td>
+                         <td><%=rs.getString("FRIDAY")%></td>
+                         
+                         
+                         
+                                 <%
+                
+                   }
+               } catch(Exception e){
+                   
+               }        
+        %>
+        </table>
+    </body>

@@ -1,0 +1,103 @@
+
+.c1{
+  width: 100%;
+  background-image: url('back1.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  padding: 20px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+nav ul{
+  padding:16px;
+  margin:0px;
+  background:black;
+  width:100%;
+  
+  float: left;
+  
+  margin-right: 20px;
+
+}
+nav ul li{
+  display: inline-block;
+  line-height:0;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  margin:13px;
+  padding: 5px;
+  font-size: 17px;
+  border-radius: 5px;
+  border-color: white;  
+  text-transform: uppercase;
+}
+.c6{
+    
+    padding: 8px;
+    width: 225px;
+
+}
+.c7{
+    padding: 7px;
+}
+.c8{
+    padding: 25px;
+}
+.c9{
+    padding: 29px;
+}
+.c10{
+    padding:0px;
+}
+h2{
+    color:crimson;
+}
+.c3{
+    
+    padding: 29px;
+    width: 622px;
+    height: 321px;
+    background: darkcyan;
+    
+}
+
+.c5{
+    padding:10px;
+    width:40px;
+    height:10px;
+    
+}
+a.active,a:hover{
+  background:rgb(248, 109, 58);
+  transition: .5s;
+}
+.c4{
+    background-color: cyan;
+    padding: 9px;
+    width: 85px;
+}
+h5{
+   
+    padding: 23px;
+    margin: 4px;
+    width: 1px;
+    
+}
+
+h3{
+    padding:8px;
+}
+.c4:hover{
+    background-color: red;
+}
